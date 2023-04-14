@@ -38,10 +38,10 @@
             this.lblComida = new System.Windows.Forms.Label();
             this.mrcGastos = new System.Windows.Forms.GroupBox();
             this.mrcIngresos = new System.Windows.Forms.GroupBox();
-            this.lblSaldoDisponible = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.mrcSaldoDisponible = new System.Windows.Forms.GroupBox();
+            this.lblSaldoDisponible = new System.Windows.Forms.Label();
             this.mrcGastos.SuspendLayout();
             this.mrcIngresos.SuspendLayout();
             this.mrcSaldoDisponible.SuspendLayout();
@@ -147,16 +147,6 @@
             this.mrcIngresos.TabStop = false;
             this.mrcIngresos.Text = "Ingresos";
             // 
-            // lblSaldoDisponible
-            // 
-            this.lblSaldoDisponible.AutoSize = true;
-            this.lblSaldoDisponible.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblSaldoDisponible.Location = new System.Drawing.Point(6, 13);
-            this.lblSaldoDisponible.Name = "lblSaldoDisponible";
-            this.lblSaldoDisponible.Size = new System.Drawing.Size(120, 17);
-            this.lblSaldoDisponible.TabIndex = 10;
-            this.lblSaldoDisponible.Text = "Saldo disponible: ";
-            // 
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(37, 357);
@@ -184,12 +174,22 @@
             this.mrcSaldoDisponible.TabIndex = 13;
             this.mrcSaldoDisponible.TabStop = false;
             // 
+            // lblSaldoDisponible
+            // 
+            this.lblSaldoDisponible.AutoSize = true;
+            this.lblSaldoDisponible.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblSaldoDisponible.Location = new System.Drawing.Point(6, 13);
+            this.lblSaldoDisponible.Name = "lblSaldoDisponible";
+            this.lblSaldoDisponible.Size = new System.Drawing.Size(120, 17);
+            this.lblSaldoDisponible.TabIndex = 10;
+            this.lblSaldoDisponible.Text = "Saldo disponible: ";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(336, 488);
+            this.ClientSize = new System.Drawing.Size(325, 488);
             this.Controls.Add(this.mrcSaldoDisponible);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -219,10 +219,10 @@
         private System.Windows.Forms.Label lblComida;
         private System.Windows.Forms.GroupBox mrcGastos;
         private System.Windows.Forms.GroupBox mrcIngresos;
-        private System.Windows.Forms.Label lblSaldoDisponible;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox mrcSaldoDisponible;
+        private System.Windows.Forms.Label lblSaldoDisponible;
     }
 }
 
