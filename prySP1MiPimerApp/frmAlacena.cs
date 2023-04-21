@@ -10,26 +10,17 @@ using System.Windows.Forms;
 
 namespace prySP1MiPimerApp
 {
-    public partial class FrmPrincipal : Form
+    public partial class frmAlacena : Form
     {
-        public FrmPrincipal()
+        public frmAlacena()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            frmAgregar agregar = new frmAgregar();
+            agregar.ShowDialog();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace prySP1MiPimerApp
 {
-    partial class FrmPrincipal
+    partial class frmGestordeGastos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestordeGastos));
             this.lblIngreso = new System.Windows.Forms.Label();
             this.txtIngreso = new System.Windows.Forms.TextBox();
             this.txtAlquiler = new System.Windows.Forms.TextBox();
@@ -158,7 +159,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(155, 357);
+            this.btnCancelar.Location = new System.Drawing.Point(218, 357);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 35);
             this.btnCancelar.TabIndex = 12;
@@ -184,7 +185,7 @@
             this.lblSaldoDisponible.TabIndex = 10;
             this.lblSaldoDisponible.Text = "Saldo disponible: ";
             // 
-            // FrmPrincipal
+            // frmGestordeGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,7 +196,8 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.mrcIngresos);
             this.Controls.Add(this.mrcGastos);
-            this.Name = "FrmPrincipal";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmGestordeGastos";
             this.Text = "Gestor de gastos mensuales";
             this.mrcGastos.ResumeLayout(false);
             this.mrcGastos.PerformLayout();
