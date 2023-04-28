@@ -43,6 +43,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.mrcSaldoDisponible = new System.Windows.Forms.GroupBox();
             this.lblSaldoDisponible = new System.Windows.Forms.Label();
+            this.lblSaldoFinal = new System.Windows.Forms.Label();
             this.mrcGastos.SuspendLayout();
             this.mrcIngresos.SuspendLayout();
             this.mrcSaldoDisponible.SuspendLayout();
@@ -65,6 +66,7 @@
             this.txtIngreso.Name = "txtIngreso";
             this.txtIngreso.Size = new System.Drawing.Size(126, 23);
             this.txtIngreso.TabIndex = 1;
+            this.txtIngreso.TextChanged += new System.EventHandler(this.txtIngreso_TextChanged);
             // 
             // txtAlquiler
             // 
@@ -156,6 +158,7 @@
             this.btnAceptar.TabIndex = 11;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -165,9 +168,11 @@
             this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // mrcSaldoDisponible
             // 
+            this.mrcSaldoDisponible.Controls.Add(this.lblSaldoFinal);
             this.mrcSaldoDisponible.Controls.Add(this.lblSaldoDisponible);
             this.mrcSaldoDisponible.Location = new System.Drawing.Point(37, 425);
             this.mrcSaldoDisponible.Name = "mrcSaldoDisponible";
@@ -179,11 +184,22 @@
             // 
             this.lblSaldoDisponible.AutoSize = true;
             this.lblSaldoDisponible.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblSaldoDisponible.Location = new System.Drawing.Point(6, 13);
+            this.lblSaldoDisponible.Location = new System.Drawing.Point(6, 12);
             this.lblSaldoDisponible.Name = "lblSaldoDisponible";
             this.lblSaldoDisponible.Size = new System.Drawing.Size(120, 17);
             this.lblSaldoDisponible.TabIndex = 10;
             this.lblSaldoDisponible.Text = "Saldo disponible: ";
+            this.lblSaldoDisponible.Click += new System.EventHandler(this.lblSaldoDisponible_Click);
+            // 
+            // lblSaldoFinal
+            // 
+            this.lblSaldoFinal.AutoSize = true;
+            this.lblSaldoFinal.Location = new System.Drawing.Point(122, 16);
+            this.lblSaldoFinal.Name = "lblSaldoFinal";
+            this.lblSaldoFinal.Size = new System.Drawing.Size(13, 13);
+            this.lblSaldoFinal.TabIndex = 0;
+            this.lblSaldoFinal.Text = "0";
+            this.lblSaldoFinal.Click += new System.EventHandler(this.lblSaldoFinal_Click);
             // 
             // frmGestordeGastos
             // 
@@ -199,6 +215,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGestordeGastos";
             this.Text = "Gestor de gastos mensuales";
+            this.Load += new System.EventHandler(this.frmGestordeGastos_Load);
             this.mrcGastos.ResumeLayout(false);
             this.mrcGastos.PerformLayout();
             this.mrcIngresos.ResumeLayout(false);
@@ -225,6 +242,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox mrcSaldoDisponible;
         private System.Windows.Forms.Label lblSaldoDisponible;
+        private System.Windows.Forms.Label lblSaldoFinal;
     }
 }
 

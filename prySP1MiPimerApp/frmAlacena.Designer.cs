@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnBaño = new System.Windows.Forms.Button();
+            this.btnHeladera = new System.Windows.Forms.Button();
+            this.btnComida = new System.Windows.Forms.Button();
+            this.btnCongelados = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAgregarProducto
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(100, 349);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Agregar producto";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(100, 349);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(123, 55);
+            this.btnAgregarProducto.TabIndex = 0;
+            this.btnAgregarProducto.Text = "Agregar producto";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -57,59 +57,60 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Alacena";
             // 
-            // button2
+            // btnBaño
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Location = new System.Drawing.Point(172, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 64);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Baño";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBaño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnBaño.Location = new System.Drawing.Point(172, 224);
+            this.btnBaño.Name = "btnBaño";
+            this.btnBaño.Size = new System.Drawing.Size(107, 64);
+            this.btnBaño.TabIndex = 2;
+            this.btnBaño.Text = "Baño";
+            this.btnBaño.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnHeladera
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.Location = new System.Drawing.Point(38, 224);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 64);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Heladera";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnHeladera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnHeladera.Location = new System.Drawing.Point(38, 224);
+            this.btnHeladera.Name = "btnHeladera";
+            this.btnHeladera.Size = new System.Drawing.Size(107, 64);
+            this.btnHeladera.TabIndex = 3;
+            this.btnHeladera.Text = "Heladera";
+            this.btnHeladera.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnComida
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Location = new System.Drawing.Point(172, 92);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 64);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Comida";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnComida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnComida.Location = new System.Drawing.Point(172, 92);
+            this.btnComida.Name = "btnComida";
+            this.btnComida.Size = new System.Drawing.Size(107, 64);
+            this.btnComida.TabIndex = 4;
+            this.btnComida.Text = "Comida";
+            this.btnComida.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnCongelados
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button5.Location = new System.Drawing.Point(38, 92);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(107, 64);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Congelados";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCongelados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnCongelados.Location = new System.Drawing.Point(38, 92);
+            this.btnCongelados.Name = "btnCongelados";
+            this.btnCongelados.Size = new System.Drawing.Size(107, 64);
+            this.btnCongelados.TabIndex = 5;
+            this.btnCongelados.Text = "Congelados";
+            this.btnCongelados.UseVisualStyleBackColor = true;
             // 
             // frmAlacena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCongelados);
+            this.Controls.Add(this.btnComida);
+            this.Controls.Add(this.btnHeladera);
+            this.Controls.Add(this.btnBaño);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAgregarProducto);
             this.Name = "frmAlacena";
             this.Text = "frmAlacena";
+            this.Load += new System.EventHandler(this.frmAlacena_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,11 +118,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnBaño;
+        private System.Windows.Forms.Button btnHeladera;
+        private System.Windows.Forms.Button btnComida;
+        private System.Windows.Forms.Button btnCongelados;
     }
 }

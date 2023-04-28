@@ -22,5 +22,10 @@ namespace prySP1MiPimerApp
             frmAgregar agregar = new frmAgregar();
             agregar.ShowDialog();
         }
+
+        private void frmAlacena_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
