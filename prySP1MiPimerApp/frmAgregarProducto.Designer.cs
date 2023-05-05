@@ -29,160 +29,173 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgregar));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.groupBox1.SuspendLayout();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblProducto = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblUbicacion = new System.Windows.Forms.Label();
+            this.mrcTitulo = new System.Windows.Forms.GroupBox();
+            this.lblAgregar = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.cboProducto = new System.Windows.Forms.ComboBox();
+            this.cboUbicacion = new System.Windows.Forms.ComboBox();
+            this.lstVariedad = new System.Windows.Forms.ListBox();
+            this.mrcTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblCategoria
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Categoria";
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(12, 90);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoria.TabIndex = 0;
+            this.lblCategoria.Text = "Categoria";
             // 
-            // label2
+            // lblProducto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 142);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Producto";
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Location = new System.Drawing.Point(12, 142);
+            this.lblProducto.Name = "lblProducto";
+            this.lblProducto.Size = new System.Drawing.Size(50, 13);
+            this.lblProducto.TabIndex = 1;
+            this.lblProducto.Text = "Producto";
             // 
-            // label3
+            // lblCantidad
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Cantidad";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(12, 195);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(49, 13);
+            this.lblCantidad.TabIndex = 2;
+            this.lblCantidad.Text = "Cantidad";
             // 
-            // label4
+            // lblUbicacion
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 241);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Ubicación";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblUbicacion.AutoSize = true;
+            this.lblUbicacion.Location = new System.Drawing.Point(12, 241);
+            this.lblUbicacion.Name = "lblUbicacion";
+            this.lblUbicacion.Size = new System.Drawing.Size(55, 13);
+            this.lblUbicacion.TabIndex = 3;
+            this.lblUbicacion.Text = "Ubicación";
+            this.lblUbicacion.Click += new System.EventHandler(this.label4_Click);
             // 
-            // groupBox1
+            // mrcTitulo
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Location = new System.Drawing.Point(-6, -7);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(241, 69);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
+            this.mrcTitulo.BackColor = System.Drawing.SystemColors.Control;
+            this.mrcTitulo.Controls.Add(this.lblAgregar);
+            this.mrcTitulo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.mrcTitulo.Location = new System.Drawing.Point(-6, -7);
+            this.mrcTitulo.Name = "mrcTitulo";
+            this.mrcTitulo.Size = new System.Drawing.Size(241, 69);
+            this.mrcTitulo.TabIndex = 4;
+            this.mrcTitulo.TabStop = false;
             // 
-            // label5
+            // lblAgregar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label5.Location = new System.Drawing.Point(67, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 29);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Agregar";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lblAgregar.AutoSize = true;
+            this.lblAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblAgregar.Location = new System.Drawing.Point(67, 16);
+            this.lblAgregar.Name = "lblAgregar";
+            this.lblAgregar.Size = new System.Drawing.Size(99, 29);
+            this.lblAgregar.TabIndex = 0;
+            this.lblAgregar.Text = "Agregar";
+            this.lblAgregar.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox2
+            // txtCantidad
             // 
-            this.textBox2.Location = new System.Drawing.Point(86, 188);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtCantidad.Location = new System.Drawing.Point(86, 188);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(121, 20);
+            this.txtCantidad.TabIndex = 6;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(15, 314);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(15, 314);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 10;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(143, 314);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(143, 314);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 11;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cboCategoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Items.AddRange(new object[] {
             "Limpieza",
             "Comida",
             "Congelados",
             "Enlatados"});
-            this.comboBox1.Location = new System.Drawing.Point(85, 90);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cboCategoria.Location = new System.Drawing.Point(85, 90);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(121, 21);
+            this.cboCategoria.TabIndex = 12;
+            this.cboCategoria.SelectedIndexChanged += new System.EventHandler(this.cboCategoria_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cboProducto
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(85, 142);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 13;
+            this.cboProducto.FormattingEnabled = true;
+            this.cboProducto.Location = new System.Drawing.Point(85, 142);
+            this.cboProducto.Name = "cboProducto";
+            this.cboProducto.Size = new System.Drawing.Size(121, 21);
+            this.cboProducto.TabIndex = 13;
             // 
-            // comboBox3
+            // cboUbicacion
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cboUbicacion.FormattingEnabled = true;
+            this.cboUbicacion.Items.AddRange(new object[] {
             "Heladera",
             "Freezer",
             "Alacena",
             "Baño"});
-            this.comboBox3.Location = new System.Drawing.Point(85, 238);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 14;
+            this.cboUbicacion.Location = new System.Drawing.Point(85, 238);
+            this.cboUbicacion.Name = "cboUbicacion";
+            this.cboUbicacion.Size = new System.Drawing.Size(121, 21);
+            this.cboUbicacion.TabIndex = 14;
+            // 
+            // lstVariedad
+            // 
+            this.lstVariedad.FormattingEnabled = true;
+            this.lstVariedad.Location = new System.Drawing.Point(15, 362);
+            this.lstVariedad.Name = "lstVariedad";
+            this.lstVariedad.Size = new System.Drawing.Size(203, 82);
+            this.lstVariedad.TabIndex = 15;
             // 
             // frmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(228, 370);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(233, 465);
+            this.Controls.Add(this.lstVariedad);
+            this.Controls.Add(this.cboUbicacion);
+            this.Controls.Add(this.cboProducto);
+            this.Controls.Add(this.cboCategoria);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.mrcTitulo);
+            this.Controls.Add(this.lblUbicacion);
+            this.Controls.Add(this.lblCantidad);
+            this.Controls.Add(this.lblProducto);
+            this.Controls.Add(this.lblCategoria);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAgregar";
             this.Text = "Form2";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.frmAgregar_Load);
+            this.mrcTitulo.ResumeLayout(false);
+            this.mrcTitulo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,17 +203,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label lblProducto;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label lblUbicacion;
+        private System.Windows.Forms.GroupBox mrcTitulo;
+        private System.Windows.Forms.Label lblAgregar;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cboCategoria;
+        private System.Windows.Forms.ComboBox cboProducto;
+        private System.Windows.Forms.ComboBox cboUbicacion;
+        private System.Windows.Forms.ListBox lstVariedad;
     }
 }
