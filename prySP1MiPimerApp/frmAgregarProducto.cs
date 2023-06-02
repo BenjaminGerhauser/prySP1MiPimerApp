@@ -19,7 +19,7 @@ namespace prySP1MiPimerApp
 
         private void cboCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+           
             switch (cboCategoria.Text)
             {
                 case "Limpieza":
