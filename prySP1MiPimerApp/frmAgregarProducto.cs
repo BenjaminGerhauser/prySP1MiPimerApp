@@ -13,6 +13,7 @@ namespace prySP1MiPimerApp
     public partial class frmAgregar : Form
     {
 
+
         //variables
          
         string varubicacion, varcategoria, varproducto, varcantidad;
