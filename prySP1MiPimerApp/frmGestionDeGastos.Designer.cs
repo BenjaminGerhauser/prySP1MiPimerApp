@@ -42,8 +42,8 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.mrcSaldoDisponible = new System.Windows.Forms.GroupBox();
-            this.lblSaldoDisponible = new System.Windows.Forms.Label();
             this.lblSaldoFinal = new System.Windows.Forms.Label();
+            this.lblSaldoDisponible = new System.Windows.Forms.Label();
             this.mrcGastos.SuspendLayout();
             this.mrcIngresos.SuspendLayout();
             this.mrcSaldoDisponible.SuspendLayout();
@@ -58,7 +58,6 @@
             this.lblIngreso.Size = new System.Drawing.Size(64, 17);
             this.lblIngreso.TabIndex = 0;
             this.lblIngreso.Text = "Depósito";
-            this.lblIngreso.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtIngreso
             // 
@@ -66,7 +65,7 @@
             this.txtIngreso.Name = "txtIngreso";
             this.txtIngreso.Size = new System.Drawing.Size(126, 23);
             this.txtIngreso.TabIndex = 1;
-            this.txtIngreso.TextChanged += new System.EventHandler(this.txtIngreso_TextChanged);
+            this.txtIngreso.Text = "0";
             // 
             // txtAlquiler
             // 
@@ -103,12 +102,11 @@
             // 
             this.lblIntereses.AutoSize = true;
             this.lblIntereses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblIntereses.Location = new System.Drawing.Point(27, 87);
+            this.lblIntereses.Location = new System.Drawing.Point(27, 84);
             this.lblIntereses.Name = "lblIntereses";
             this.lblIntereses.Size = new System.Drawing.Size(66, 17);
             this.lblIntereses.TabIndex = 6;
             this.lblIntereses.Text = "Intereses";
-            this.lblIntereses.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblComida
             // 
@@ -122,6 +120,7 @@
             // 
             // mrcGastos
             // 
+            this.mrcGastos.BackColor = System.Drawing.SystemColors.Control;
             this.mrcGastos.Controls.Add(this.lblComida);
             this.mrcGastos.Controls.Add(this.lblIntereses);
             this.mrcGastos.Controls.Add(this.lblAlquiler);
@@ -136,13 +135,14 @@
             this.mrcGastos.TabIndex = 8;
             this.mrcGastos.TabStop = false;
             this.mrcGastos.Text = "Gastos";
-            this.mrcGastos.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // mrcIngresos
             // 
+            this.mrcIngresos.BackColor = System.Drawing.SystemColors.Control;
             this.mrcIngresos.Controls.Add(this.txtIngreso);
             this.mrcIngresos.Controls.Add(this.lblIngreso);
             this.mrcIngresos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.mrcIngresos.ForeColor = System.Drawing.SystemColors.ControlText;
             this.mrcIngresos.Location = new System.Drawing.Point(37, 29);
             this.mrcIngresos.Name = "mrcIngresos";
             this.mrcIngresos.Size = new System.Drawing.Size(256, 67);
@@ -152,33 +152,45 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAceptar.Location = new System.Drawing.Point(37, 357);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(82, 35);
             this.btnAceptar.TabIndex = 11;
             this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCancelar.Location = new System.Drawing.Point(218, 357);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 35);
             this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // mrcSaldoDisponible
             // 
+            this.mrcSaldoDisponible.BackColor = System.Drawing.SystemColors.Control;
             this.mrcSaldoDisponible.Controls.Add(this.lblSaldoFinal);
             this.mrcSaldoDisponible.Controls.Add(this.lblSaldoDisponible);
-            this.mrcSaldoDisponible.Location = new System.Drawing.Point(37, 425);
+            this.mrcSaldoDisponible.Location = new System.Drawing.Point(37, 423);
             this.mrcSaldoDisponible.Name = "mrcSaldoDisponible";
-            this.mrcSaldoDisponible.Size = new System.Drawing.Size(256, 37);
+            this.mrcSaldoDisponible.Size = new System.Drawing.Size(256, 39);
             this.mrcSaldoDisponible.TabIndex = 13;
             this.mrcSaldoDisponible.TabStop = false;
+            // 
+            // lblSaldoFinal
+            // 
+            this.lblSaldoFinal.AutoSize = true;
+            this.lblSaldoFinal.Location = new System.Drawing.Point(122, 16);
+            this.lblSaldoFinal.Name = "lblSaldoFinal";
+            this.lblSaldoFinal.Size = new System.Drawing.Size(13, 13);
+            this.lblSaldoFinal.TabIndex = 0;
+            this.lblSaldoFinal.Text = "0";
             // 
             // lblSaldoDisponible
             // 
@@ -189,23 +201,12 @@
             this.lblSaldoDisponible.Size = new System.Drawing.Size(120, 17);
             this.lblSaldoDisponible.TabIndex = 10;
             this.lblSaldoDisponible.Text = "Saldo disponible: ";
-            this.lblSaldoDisponible.Click += new System.EventHandler(this.lblSaldoDisponible_Click);
-            // 
-            // lblSaldoFinal
-            // 
-            this.lblSaldoFinal.AutoSize = true;
-            this.lblSaldoFinal.Location = new System.Drawing.Point(122, 16);
-            this.lblSaldoFinal.Name = "lblSaldoFinal";
-            this.lblSaldoFinal.Size = new System.Drawing.Size(13, 13);
-            this.lblSaldoFinal.TabIndex = 0;
-            this.lblSaldoFinal.Text = "0";
-            this.lblSaldoFinal.Click += new System.EventHandler(this.lblSaldoFinal_Click);
             // 
             // frmGestordeGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(325, 488);
             this.Controls.Add(this.mrcSaldoDisponible);
             this.Controls.Add(this.btnCancelar);

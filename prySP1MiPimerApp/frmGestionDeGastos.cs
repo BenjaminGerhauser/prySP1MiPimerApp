@@ -22,41 +22,9 @@ namespace prySP1MiPimerApp
         {
             InitializeComponent();
         }
+       
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtIngreso_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSaldoDisponible_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            //aa
-        }
-
-        private void lblSaldoFinal_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void frmGestordeGastos_Load(object sender, EventArgs e)
         {
@@ -82,11 +50,9 @@ namespace prySP1MiPimerApp
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            varAlquiler = 0;
-            varDeposito = 0;
-            varIntereses = 0;
-            varDeposito = 0;
-            lblSaldoFinal.Text = "0";
+            this.Hide();
+            frmPrincipal principal = new frmPrincipal();
+            principal.ShowDialog();
         }
     }
 }

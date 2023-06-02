@@ -17,21 +17,20 @@ namespace prySP1MiPimerApp
             InitializeComponent();
         }
 
-        private void frmPrincipal_Load(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            frmGestordeGastos Gestor = new frmGestordeGastos();
-            Gestor.ShowDialog();
-        }
+        
 
         private void btnAlacena_Click(object sender, EventArgs e)
         {
             frmAlacena alacena = new frmAlacena();
             alacena.ShowDialog();
+        }
+
+        private void btnGastos_Click(object sender, EventArgs e)
+        {
+            frmGestordeGastos Gestor = new frmGestordeGastos();
+            Gestor.ShowDialog();
         }
     }
 }

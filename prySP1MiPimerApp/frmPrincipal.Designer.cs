@@ -34,34 +34,36 @@
             // 
             // btnAlacena
             // 
+            this.btnAlacena.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAlacena.Location = new System.Drawing.Point(171, 35);
             this.btnAlacena.Name = "btnAlacena";
             this.btnAlacena.Size = new System.Drawing.Size(138, 122);
             this.btnAlacena.TabIndex = 0;
             this.btnAlacena.Text = "Alacena";
-            this.btnAlacena.UseVisualStyleBackColor = true;
+            this.btnAlacena.UseVisualStyleBackColor = false;
             this.btnAlacena.Click += new System.EventHandler(this.btnAlacena_Click);
             // 
             // btnGastos
             // 
+            this.btnGastos.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGastos.Location = new System.Drawing.Point(27, 35);
             this.btnGastos.Name = "btnGastos";
             this.btnGastos.Size = new System.Drawing.Size(138, 122);
             this.btnGastos.TabIndex = 1;
             this.btnGastos.Text = "Gastos";
-            this.btnGastos.UseVisualStyleBackColor = true;
-            this.btnGastos.Click += new System.EventHandler(this.button2_Click);
+            this.btnGastos.UseVisualStyleBackColor = false;
+            this.btnGastos.Click += new System.EventHandler(this.btnGastos_Click);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(341, 193);
             this.Controls.Add(this.btnGastos);
             this.Controls.Add(this.btnAlacena);
             this.Name = "frmPrincipal";
-            this.Text = "frmPrincipar";
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.Text = "Inicio";
             this.ResumeLayout(false);
 
         }
